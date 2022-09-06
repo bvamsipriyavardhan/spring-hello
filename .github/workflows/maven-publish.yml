@@ -34,7 +34,7 @@ jobs:
             mvn -B test 
     - name: upload coverage to codecov
       uses: codecov/codecov-action@v3
-      env:
-        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }
+      #env:
+       # CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }
    
         
