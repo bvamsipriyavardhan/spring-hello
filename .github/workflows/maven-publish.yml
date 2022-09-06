@@ -28,7 +28,7 @@ jobs:
       
     - name: Install dependencies    
       run: 
-         mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -R
+         mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V 
     - name: Run Test and Collect Coverage
       run: 
             mvn -R test 
