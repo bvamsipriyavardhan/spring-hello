@@ -34,9 +34,7 @@ jobs:
             mvn -B test 
     - name: upload coverage to codecov
       uses: codecov/codecov-action@v3
-      with: 
-       flags: test
-       fail_ci_if_error: true
+ 
        
       #env:
        # CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }
