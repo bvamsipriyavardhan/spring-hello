@@ -37,7 +37,6 @@ jobs:
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
     - name: connect to uploader  
-         curl -Os https://uploader.codecov.io/latest/linux/codecov
-         chmod +x codecov
-         ./codecov
+         curl -s https://uploader.codecov.io/latest/linux/codecov
+   
         
